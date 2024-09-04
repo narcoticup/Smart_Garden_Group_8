@@ -1,0 +1,234 @@
+{
+    "systemInfo": {
+        "systemName": "Smart Garden System",
+        "version": "1.0.0",
+        "lastUpdate": "2024-08-25T10:00:00Z",
+        "location": "45.045055, 7.688982",
+        "description": "This smart garden system, based on external weather and soil measurements, ensures optimal plant growth and high water use efficiency. The system automatically controls irrigation by setting thresholds, intelligently saving water resources and energy."
+    },
+    "actuators": [
+        {
+            "actuatorID": "waterpump",
+            "actuatorName": "Water Pump",
+            "actuatorType": "actuator",
+            "location": "Front Garden",
+            "communicationMethod": "REST",
+            "controlCommands": [
+                "turn_on",
+                "turn_off"
+            ],
+            "status": "OFF"
+        },
+        {
+            "actuatorID": "led",
+            "actuatorName": "Status LED",
+            "actuatorType": "actuator",
+            "location": "Control Unit",
+            "communicationMethod": "MQTT",
+            "controlCommands": [
+                "turn_on",
+                "turn_off"
+            ],
+            "status": "OFF"
+        }
+    ],
+    "sensors": [
+        {
+            "sensorID": "soil_moisture1",
+            "sensorType": "Soil Moisture Sensor",
+            "location": "Front Garden",
+            "measureUnit": "%",
+            "dataFrequency": "60",
+            "thresholds": {
+                "min": 20,
+                "max": 80
+            },
+            "status": "active"
+        },
+        {
+            "sensorID": "soil_moisture2",
+            "sensorType": "Soil Moisture Sensor",
+            "location": "Front Garden",
+            "measureUnit": "%",
+            "dataFrequency": "60",
+            "thresholds": {
+                "min": 20,
+                "max": 80
+            },
+            "status": "active"
+        },
+        {
+            "sensorID": "soil_moisture3",
+            "sensorType": "Soil Moisture Sensor",
+            "location": "Front Garden",
+            "measureUnit": "%",
+            "dataFrequency": "60",
+            "thresholds": {
+                "min": 20,
+                "max": 80
+            },
+            "status": "active"
+        },
+        {
+            "sensorID": "soil_moisture4",
+            "sensorType": "Soil Moisture Sensor",
+            "location": "Front Garden",
+            "measureUnit": "%",
+            "dataFrequency": "60",
+            "thresholds": {
+                "min": 20,
+                "max": 80
+            },
+            "status": "active"
+        },
+        {
+            "sensorID": "soil_moisture5",
+            "sensorType": "Soil Moisture Sensor",
+            "location": "Front Garden",
+            "measureUnit": "%",
+            "dataFrequency": "60",
+            "thresholds": {
+                "min": 20,
+                "max": 80
+            },
+            "status": "active"
+        },
+        {
+            "sensorID": "soil_moisture6",
+            "sensorType": "Soil Moisture Sensor",
+            "location": "Front Garden",
+            "measureUnit": "%",
+            "dataFrequency": "60",
+            "thresholds": {
+                "min": 20,
+                "max": 80
+            },
+            "status": "active"
+        },
+        {
+            "sensorID": "soil_moisture7",
+            "sensorType": "Soil Moisture Sensor",
+            "location": "Front Garden",
+            "measureUnit": "%",
+            "dataFrequency": "60",
+            "thresholds": {
+                "min": 20,
+                "max": 80
+            },
+            "status": "active"
+        },
+        {
+            "sensorID": "soil_moisture8",
+            "sensorType": "Soil Moisture Sensor",
+            "location": "Front Garden",
+            "measureUnit": "%",
+            "dataFrequency": "60",
+            "thresholds": {
+                "min": 20,
+                "max": 80
+            },
+            "status": "active"
+        },
+        {
+            "sensorID": "soil_moisture9",
+            "sensorType": "Soil Moisture Sensor",
+            "location": "Front Garden",
+            "measureUnit": "%",
+            "dataFrequency": "60",
+            "thresholds": {
+                "min": 20,
+                "max": 80
+            },
+            "status": "active"
+        },
+        {
+            "sensorID": "dth22",
+            "sensorType": "Temperature and Humidity Sensor",
+            "location": "Front Garden",
+            "measureUnit": "Celsius, %RH",
+            "dataFrequency": "60",
+            "thresholds": {
+                "minTemp": -10,
+                "maxTemp": 40,
+                "minHumidity": 20,
+                "maxHumidity": 90
+            },
+            "status": "active"
+        },
+        {
+            "sensorID": "tsl2561",
+            "sensorType": "Light Sensor",
+            "location": "Front Garden",
+            "measureUnit": "lux",
+            "dataFrequency": "60",
+            "thresholds": {
+                "min": 0,
+                "max": 1000
+            },
+            "status": "active"
+        },
+        {
+            "sensorID": "yl_83",
+            "sensorType": "Rain Sensor",
+            "location": "Front Garden",
+            "measureUnit": "boolean",
+            "dataFrequency": "60",
+            "thresholds": {
+                "detectLevel": 1
+            },
+            "status": "active"
+        },
+        {
+            "sensorID": "yf_s402",
+            "sensorType": "Water Flow Sensor",
+            "location": "Water Pump",
+            "measureUnit": "liters/min",
+            "dataFrequency": "60",
+            "thresholds": {
+                "minFlow": 0.2,
+                "maxFlow": 5.0
+            },
+            "status": "active"
+        }
+    ],
+    "commands": [
+        {
+            "targetDeviceID": "waterpump",
+            "commandType": "turn_on",
+            "parameters": {
+                "duration": 600
+            },
+            "status": "completed",
+            "timestamp": "2024-09-03T18:04:41.769099",
+            "commandID": "cmd3"
+        },
+        {
+            "targetDeviceID": "waterpump",
+            "commandType": "turn_off",
+            "parameters": null,
+            "status": "completed",
+            "timestamp": "2024-09-03T18:04:47.979233",
+            "commandID": "cmd4"
+        }
+    ],
+    "mqttBroker": {
+        "brokerAddress": "mqtt.eclipseprojects.io",
+        "port": 1883,
+        "topics": {
+            "sensorData": "Garden/sensors",
+            "actuatorCommands": "Garden/actuators"
+        }
+    },
+    "thingSpeak": {
+        "apiKey": "JF91IDPD4OPIIYT4",
+        "channelID": "2576980",
+        "username": "DjgfMx01ABEZJxwlMQIACxQ",
+        "clientId": "DjgfMx01ABEZJxwlMQIACxQ",
+        "password": "dOD7/m73t0PnYVYQjuWLZObs",
+        "updateInterval": "600"
+    },
+    "telegramBot": {
+        "botToken": "7309080234:AAEGmUtPP_hTJOy5dCrwn76OS7NRdP3c7Fg",
+        "chatID": "IOT_Garden_G8"
+    }
+}
