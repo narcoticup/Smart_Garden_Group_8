@@ -1,0 +1,179 @@
+{
+    "baseTopic": "Garden/sensors",
+    "clientID": "Garden_Sensors",
+    "plantKind": "Grass",
+    "plantingDate": "2024-08-01",
+    "urlSensors": "http://127.0.0.1:8080/garden/sensors",
+    "devicesList": [
+        {
+            "deviceID": "soil_moisture1",
+            "deviceName": "Soil Moisture 1",
+            "measureType": ["soil_moisture"],
+            "availableServices": ["MQTT"],
+            "servicesDetails": [
+                {
+                    "serviceType": "MQTT",
+                    "topic": "Garden/sensors/soil_moisture/1"
+                }
+            ],
+            "lastUpdate": "2024-08-25T10:00:00Z"
+        },
+                {
+            "deviceID": "soil_moisture2",
+            "deviceName": "Soil Moisture 2",
+            "measureType": ["soil_moisture"],
+            "availableServices": ["MQTT"],
+            "servicesDetails": [
+                {
+                    "serviceType": "MQTT",
+                    "topic": "Garden/sensors/soil_moisture/2"
+                }
+            ],
+            "lastUpdate": "2024-08-25T10:00:00Z"
+        },
+                {
+            "deviceID": "soil_moisture3",
+            "deviceName": "Soil Moisture 3",
+            "measureType": ["soil_moisture"],
+            "availableServices": ["MQTT"],
+            "servicesDetails": [
+                {
+                    "serviceType": "MQTT",
+                    "topic": "Garden/sensors/soil_moisture/3"
+                }
+            ],
+            "lastUpdate": "2024-08-25T10:00:00Z"
+        },
+                {
+            "deviceID": "soil_moisture4",
+            "deviceName": "Soil Moisture 4",
+            "measureType": ["soil_moisture"],
+            "availableServices": ["MQTT"],
+            "servicesDetails": [
+                {
+                    "serviceType": "MQTT",
+                    "topic": "Garden/sensors/soil_moisture/4"
+                }
+            ],
+            "lastUpdate": "2024-08-25T10:00:00Z"
+        },
+                {
+            "deviceID": "soil_moisture5",
+            "deviceName": "Soil Moisture 5",
+            "measureType": ["soil_moisture"],
+            "availableServices": ["MQTT"],
+            "servicesDetails": [
+                {
+                    "serviceType": "MQTT",
+                    "topic": "Garden/sensors/soil_moisture/5"
+                }
+            ],
+            "lastUpdate": "2024-08-25T10:00:00Z"
+        },
+                {
+            "deviceID": "soil_moisture6",
+            "deviceName": "Soil Moisture 6",
+            "measureType": ["soil_moisture"],
+            "availableServices": ["MQTT"],
+            "servicesDetails": [
+                {
+                    "serviceType": "MQTT",
+                    "topic": "Garden/sensors/soil_moisture/6"
+                }
+            ],
+            "lastUpdate": "2024-08-25T10:00:00Z"
+        },
+                {
+            "deviceID": "soil_moisture7",
+            "deviceName": "Soil Moisture 7",
+            "measureType": ["soil_moisture"],
+            "availableServices": ["MQTT"],
+            "servicesDetails": [
+                {
+                    "serviceType": "MQTT",
+                    "topic": "Garden/sensors/soil_moisture/7"
+                }
+            ],
+            "lastUpdate": "2024-08-25T10:00:00Z"
+        },
+        {
+            "deviceID": "soil_moisture8",
+            "deviceName": "Soil Moisture 8",
+            "measureType": ["soil_moisture"],
+            "availableServices": ["MQTT"],
+            "servicesDetails": [
+                {
+                    "serviceType": "MQTT",
+                    "topic": "Garden/sensors/soil_moisture/8"
+                }
+            ],
+            "lastUpdate": "2024-08-25T10:00:00Z"
+        },
+        {
+            "deviceID": "soil_moisture9",
+            "deviceName": "Soil Moisture 9",
+            "measureType": ["soil_moisture"],
+            "availableServices": ["MQTT"],
+            "servicesDetails": [
+                {
+                    "serviceType": "MQTT",
+                    "topic": "Garden/sensors/soil_moisture/9"
+                }
+            ],
+            "lastUpdate": "2024-08-25T10:00:00Z"
+        },
+        {
+            "deviceID": "dth22",
+            "deviceName": "Temperature and Humidity Sensor",
+            "measureType": ["temperature", "humidity"],
+            "availableServices": ["MQTT"],
+            "servicesDetails": [
+                {
+                    "serviceType": "MQTT",
+                    "topic": ["Garden/sensors/temperature", "Garden/sensors/humidity"]
+                }
+            ],
+            "lastUpdate": "2024-08-25T10:00:00Z"
+        },
+        {
+            "deviceID": "tsl2561",
+            "deviceName": "Light Sensor",
+            "measureType": ["light"],
+            "availableServices": ["MQTT"],
+            "servicesDetails": [
+                {
+                    "serviceType": "MQTT",
+                    "topic": "Garden/sensors/light"
+                }
+            ],
+            "lastUpdate": "2024-08-25T10:00:00Z"
+        },
+        {
+            "deviceID": "yl_83",
+            "deviceName": "Rain Sensor",
+            "measureType": ["rain"],
+            "availableServices": ["MQTT"],
+            "servicesDetails": [
+                {
+                    "serviceType": "MQTT",
+                    "topic": "Garden/sensors/rain"
+                }
+            ],
+            "lastUpdate": "2024-08-25T10:00:00Z"
+        },
+        {
+            "deviceID": "yf_s402",
+            "deviceName": "Water Flow Sensor",
+            "measureType": ["water_flow"],
+            "availableServices": ["MQTT"],
+            "servicesDetails": [
+                {
+                    "serviceType": "MQTT",
+                    "topic": "Garden/sensors/water_flow"
+                }
+            ],
+            "lastUpdate": "2024-08-25T10:00:00Z"
+        }
+    ],
+    "lastUpdate": "2024-08-25T10:00:00Z"
+}

@@ -1,0 +1,41 @@
+{
+    "clientID": "Garden_Actuators",
+    "broker": "mqtt.eclipseprojects.io",
+    "port": 1883,
+    "baseTopic": "Garden/actuators",
+    "urlActuators": "http://127.0.0.1:8080/garden/actuators",
+    "devicesList": [
+        {
+            "deviceID": "waterpump",
+            "deviceName": "Water Pump",
+            "measureType": ["Switch"],
+            "availableServices": ["REST", "MQTT"],
+            "servicesDetails": [
+                {
+                    "serviceType": "REST",
+                    "url": "http://127.0.0.1:8080/garden/actuators/water_pump"
+                },
+                {
+                    "serviceType": "MQTT",
+                    "topic": "Garden/actuators/water_pump"
+                }
+            ],
+            "lastUpdate": "2024-08-25T10:00:00Z"
+        }
+        ,
+        {
+            "deviceID": "led",
+            "deviceName": "Status LED",
+            "measureType": ["Switch"],
+            "availableServices": ["MQTT"],
+            "servicesDetails": [
+                {
+                    "serviceType": "MQTT",
+                    "topic": "Garden/actuators/LED"
+                }
+            ],
+            "lastUpdate": "2024-08-25T10:00:00Z"
+        }
+    ],
+    "lastUpdate": "2024-08-25T10:00:00Z"
+}
